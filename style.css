@@ -1,0 +1,118 @@
+body {
+    background-image: url(timebg2.jpg);
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 97vh;
+}
+
+.main-container {
+    width: 700px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+
+
+.time-input {
+    display: flex;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: 35px;
+}
+
+.time-input input{
+    width: 50px;
+    height: 35px;
+    font-size: 20px;
+    margin-top: 10px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+.time-input input[type="number"]::placeholder {
+    color: #ffffff60; 
+}
+
+.time-input h2 {
+    margin-left: 5px;
+    font-size: 35px;
+    color: #fff;
+    margin-right: 4px;
+}
+
+
+
+.buttons {
+    display: flex;
+}
+
+.green {
+    color: green;
+}
+
+.red1 {
+    color: rgb(79, 0, 0);
+}
+.red{
+    color: red;
+}
+
+.blue {
+    color: rgb(255, 55, 0);
+}
+
+
+.buttons{
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.buttons div {
+    text-align: center;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 0px;
+    background-color: transparent;
+    border: none; 
+    box-shadow: none; 
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 60px;
+}
+
+i{
+    font-size: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@500;600;700&display=swap');
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 120px;
+    margin: 0;
+    margin-left: 110px;
+    margin-top: 20px;
+
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+    animation: glowOut 1s infinite alternate; 
+}
+@keyframes glowOut {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 20px rgb(0, 0, 0); 
+    }
+}
