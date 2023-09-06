@@ -112,3 +112,21 @@ function restart() {
     }
 }
 
+
+
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === ' ' || event.keyCode === 32) {
+        start();
+    }
+
+    else if (event.key === 'Delete') {
+        reset();
+    }
+
+    else if (event.key === 'r' ) {
+        restart();
+    }
+});
+
